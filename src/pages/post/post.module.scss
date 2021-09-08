@@ -20,10 +20,19 @@
         font-size: 2.25rem;
       }
     }
+
+    > span {
+      // margin-top: 1rem;
+      display: block;
+      font-style: italic;
+      font-size: 0.7rem;
+      color: var(--gray-300);
+    }
   }
 
   .postInfo {
     margin-top: 1.5rem;
+    margin-bottom: 1rem;
     color: var(--gray-300);
 
     svg {
@@ -71,5 +80,40 @@
     li {
       margin: 0.5rem 0;
     }
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border);
+
+  padding-bottom: 4rem;
+
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--gray-200);
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    color: var(--pink-500);
+
+    transition: filter 0.2s;
+    font-weight: 600;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+
+  div {
+    padding-top: 3rem;
+  }
+
+  div + div {
+    text-align: right;
   }
 }
